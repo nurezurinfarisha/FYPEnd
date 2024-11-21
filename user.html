@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EmoSync - Music Emotion Recognition</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/user.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animation.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/play.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/musicplayer.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flash.css') }}" />
+    
+    <!-- Custom Styles -->
+    <style>
+        /* Song Library Container */
+        .song-library-container {
+    width: 100%; /* Full width */
+    max-width: 1400px; /* Adjust container width */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #181818;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Enable flex for structured layout */
+    flex-direction: column; /* Align elements vertically */
+    height: 700px; /* Set the container height */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+        /* Title Styling */
+        .song-library-container h2 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+
+        /* Scrollable Grid */
+        /* Scrollable Grid */
+        .scrollable-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between items */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    flex-grow: 1; /* Allow the grid to take up all available space */
+    max-height: 90vh; /* Allow scrolling within 90% of the viewport height */
+    height: calc(100% - 50px); /* Adjust height dynamically based on available space */
+}
+
+/* Adjust the container for more scrollable space */
+.song-library-container {
+    height: auto; /* Ensure the container height adjusts automatically */
+    max-height: 90vh; /* Match the scrollable grid's height */
+    overflow: hidden; /* Prevent horizontal overflow */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Scrollbar Styling */
+.scrollable-grid::-webkit-scrollbar {
+    width: 10px; /* Make the scrollbar slightly wider */
+}
+
+.scrollable-grid::-webkit-scrollbar-thumb {
+    background: #555; /* Darker scrollbar for visibility */
+    border-radius: 5px; /* Rounded edges */
+}
+
+.scrollable-grid::-webkit-scrollbar-thumb:hover {
+    background: #333; /* Even darker on hover */
+}
+
+/*
+/* Song Card Styling */
+.song-card {
+    text-align: center;
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.song-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Album Image Styling */
+.song-card img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible within the container */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Song Title Styling */
+.song-card p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+        /* Recommendations Section Container */
+        .recommendations-section {
+    background-color: #dbccf9; /* Light background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Outfit', sans-serif; /* Match font */
+    width: 45%; /* Full width within parent container */
+    max-width: 1200px; /* Match the width of the Song Library container */
+    margin: 0 auto; /* Center the section */
+    box-sizing: border-box; /* Include padding in width */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Title Styling */
+.recommendations-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+/* Recommendations List */
+.recommendations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+/* Individual Recommendation Item */
+.recommendation-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.recommendation-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Recommendation Image */
+.recommendation-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Song Information */
+.recommendation-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.recommendation-item .song-title {
+    font-weight: bold;
+    color: #111;
+}
+
+.container-wrapper {
+    display: flex;
+    align-items: stretch;
+    gap: 20px; /* Space between library and recommendations */
+    width: 100%;
+    max-width: 1600px; /* Ensure enough room for both sections */
+    margin: 20px auto;
+    height: auto; /* Automatically adjust height based on content */
+}
+
+.main-content-container {
+    display: flex;
+    align-items: stretch; /* Ensure both sections have the same height */
+    gap: 20px; /* Space between sections */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    height: 700px; /* Align height with song-library-container */
+}
+
+/* Lyrics Container Styling */
+.lyrics-container2 {
+    margin-top: 10px;
+    background: #2b2b2b; /* Dark background for contrast */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    height: 200px; /* Fixed height matching Now Playing size */
+    width: 100%; /* Make it align with Now Playing section */
+    max-width: 450px; /* Adjust to match Now Playing width */
+    overflow: hidden; /* Hide overflowing content */
+    display: flex; /* Center content vertically */
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Scrollable Lyrics */
+/* Scrollable Lyrics */
+.scrollable-lyrics2 {
+    height: 100%; /* Match container height */
+    width: 100%; /* Match container width */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    position: relative;
+}
+
+.scrollable-lyrics2::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-lyrics2::-webkit-scrollbar-thumb {
+    background: #555; /* Darker scrollbar */
+    border-radius: 4px;
+}
+
+.scrollable-lyrics2::-webkit-scrollbar-thumb:hover {
+    background: #333; /* Even darker on hover */
+}
+
+/* Lyrics Content with Slow Animation */
+.lyrics-content2 {
+    font-size: 1rem;
+    line-height: 1.5; /* Better readability */
+    position: absolute; /* For animation */
+    width: 100%; /* Ensure it fits the container */
+    animation: scrollLyrics2 120s linear infinite; /* Very slow scrolling */
+}
+
+@keyframes scrollLyrics2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+    </style>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/emosyncLogo1new.png') }}" />
+</head>
+<body>
+    <!-- Header -->
+    <custom-header></custom-header>
+
+    <!-- Main Content -->
+    <div class="main-content-container">
+        <!-- Song Library Section -->
+        <div class="song-library-container">
+            <h2>
+                Song Library
+                <button id="shuffle-button" style="background: none; border: none; cursor: pointer; margin-left: 10px;">
+                    <img src="/static/images/shuffle.png" alt="Shuffle" style="width: 24px; height: 24px;">
+                </button>
+            </h2>
+            <div class="scrollable-grid" id="scrollable-song-list">
+                <!-- Dynamic song list will populate here -->
+            </div>
+        </div>
+        
+        
+    
+        <!-- Recommendations Section -->
+<!-- Recommendations Section -->
+<div class="recommendations-section">
+    <!-- Now Playing Section -->
+    <div class="now-playing-section" id="now-playing-container">
+        <!-- "Now Playing" Text at the Top -->
+        <h2 class="now-playing-header">Now Playing</h2>
+
+        <!-- Horizontal Content: Album Image and Lyrics -->
+        <div class="now-playing-content">
+            <!-- Album Image -->
+            <img id="now-playing-img" src="/static/images/default_album_art.png" alt="Now Playing" />
+
+            <!-- Song Info -->
+            <div>
+                <p id="now-playing-title" class="song-title">No song selected</p>
+            </div>
+        </div>
+
+        <!-- Lyrics Section -->
+        <div class="lyrics-container2">
+            <div class="scrollable-lyrics2">
+                <div id="lyrics-content2" class="lyrics-content2">
+                    <p>No lyrics available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Playing Section -->
+    <h2>Next Playing</h2>
+    <div id="recommendations-container" class="recommendations-list"></div>
+</div>
+
+
+    </div>
+    
+    <div id="music-player2" class="music-player2">
+        <img id="album-art" src="/static/images/default_album_art.png" alt="Album Art" class="album-art2">
+        
+        <div class="track-info2">
+            <span id="track-title">No song selected</span>
+        </div>
+        
+        <audio id="audio-player" class="custom-audio-player" controls style="display:none;">
+            <source id="audio-source" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div class="custom-audio-controls">
+
+            <div class="previous-btn" onclick="playPreviousTrack()">
+                <img src="/static/images/back-forward.png" alt="Previous" style="width: 30px;">
+            </div>
+            
+            <div class="play-pause-btn" onclick="togglePlayPause()">
+                <img id="play-icon" src="/static/images/play-button.png" alt="Play" style="width: 30px;">
+            </div>
+
+            <div class="next-btn" onclick="playNextTrack()">
+                <img src="/static/images/fast-foward.png" alt="Next" style="width: 30px;">
+            </div>
+            
+            <div class="progress-container">
+                <span id="current-time" class="time-display">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <span id="total-duration" class="time-display">0:00</span>
+            </div>
+
+            <div class="volume-control">
+                <img src="/static/images/high-volume.png" alt="Volume" style="width: 30px;">
+                <input type="range" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/user.js') }}"></script>
+    <script>
+        const homeUrl = "{{ url_for('home') }}";
+    </script>
+    <script src="/path/to/header.js"></script>
+    <script src="{{ url_for('static', filename='js/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/footer.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/play.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/musicplayer.js') }}"></script>
+</body>
+</html>

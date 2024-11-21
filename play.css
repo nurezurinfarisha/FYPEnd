@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: 'Outfit', sans-serif; 
+    background: linear-gradient(to bottom, #3e4b8c, #8c4b8c);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent window from scrolling */
+}
+
+/* Main Content Wrapper */
+.container-wrapper {
+    display: flex;
+    justify-content: space-between; /* Space between the main content and music library */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full height of the viewport */
+    max-width: 1400px; /* Maximum width to align with your design */
+    margin: 0 auto; /* Center the content on the page */
+    gap: 20px; /* Space between the main content and music library */
+    overflow: hidden; /* Prevent scrolling on the main wrapper */
+}
+
+/* Main Content */
+.home_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically within the container */
+    align-items: flex-start; /* Align content to the left */
+    max-width: 800px; /* Limit maximum width for main content */
+    height: 100%; /* Take full height of the container */
+}
+
+/* Adjustments for title and search form */
+.home_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically within the home_main */
+    align-items: flex-start; /* Align to the left */
+    gap: 20px; /* Space between title and form */
+    padding-left: 150px; /* Optional padding to shift everything right slightly */
+    text-align: left; /* Ensure the text is left-aligned */
+}
+
+/* Music Library Container */
+.music-player {
+    flex: 1; /* Use the remaining space for the music player */
+    background: #c359d8;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Allow scrolling within the music library */
+    max-height: calc(90vh - 100px); /* Fit within the viewport, leave space for the logo */
+    margin-top: 100px; /* Adjust to leave space below the logo */
+    max-width: 600px; /* Increase the width of the music library */
+}
+.player-header {
+    display: flex; /* Enable flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out title and shuffle button */
+    padding: 20px; /* Increase padding for more space around content */
+    background: #300b4e;
+    font-size: 24px; /* Increase font size for larger text */
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: white; /* Ensure text is visible on dark background */
+    height: 100px; /* Set a taller height for the header */
+    line-height: 1.5; /* Adjust line-height to balance text vertically */
+}
+
+/* Style for the title to keep it aligned */
+.player-header h2 {
+    margin: 0; /* Remove default margin for better alignment */
+    flex: 1; /* Take up available space for center alignment */
+    text-align: center; /* Center-align the title */
+    font-size: 28px; /* Further increase font size for title only */
+}
+
+
+/* Style for the shuffle button */
+#shuffle-button {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px; /* Add margin for spacing from edge */
+}
+
+
+/* Custom Scrollbar Style */
+.music-player::-webkit-scrollbar {
+    width: 10px;
+}
+
+.music-player::-webkit-scrollbar-track {
+    background: #444; /* Track background */
+    border-radius: 5px;
+}
+
+.music-player::-webkit-scrollbar-thumb {
+    background-color: #7d4caf; /* Scrollbar thumb color */
+    border-radius: 5px;
+    border: 2px solid #444; /* Padding around thumb */
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Song Item Container */
+.song-item {
+    position: relative; /* Set to relative for positioning button */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #3a3a3a;
+    border-radius: 8px;
+    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.song-item:hover {
+    background: #444;
+}
+
+/* Album Art Styling */
+.album-art {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 6px;
+}
+
+/* Song Details */
+.song-details {
+    flex-grow: 1; /* Expands to take up remaining space */
+}
+
+.song-details p {
+    margin: 0;
+    color: #ddd;
+    font-size: 16px;
+}
+
+/* Play Button Styling - Positioned in Top-Right Corner */
+/* Play Button Styling - Positioned in Top-Right Corner */
+/* Play Button Styling - Positioned in Top-Right Corner */
+.play-btn {
+    position: absolute;
+    top: 50%; /* Adjusted to move the button down */
+    right: 10px;
+    transform: translateY(-50%); /* Center vertically */
+    background-color: #4CAF50; /* Modern green color */
+    color: white;
+    border: none;
+    width: 50px; /* Button size */
+    height: 50px; /* Button size */
+    font-size: 20px; /* Icon size */
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Icon Styling */
+.play-btn i {
+    font-size: 20px; /* Icon size */
+}
+
+
+
+/* Hover effect for play button */
+.play-btn:hover {
+    background-color: #45a049; /* Darker green for hover */
+}
+
+/* Adjust button on active state */
+.play-btn:active {
+    background-color: #388e3c; /* Even darker green */
+}
+
+/* Next Page Button Styling */
+.next-page-btn {
+    position: fixed; /* Position it at the bottom-right corner */
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ba7ed03f; /* Green background */
+    color: white;
+    border: 2px solid white; /* White border */
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Size of the icon */
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Icon Styling */
+.next-page-btn i {
+    margin: 0; /* Center the icon */
+}
+
+/* Hover Effect */
+.next-page-btn:hover {
+    background-color: #47889f66; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Active State */
+.next-page-btn:active {
+    background-color: #47889f66; /* Even darker green when pressed */
+    transform: scale(1); /* Reset scale on click */
+}
+

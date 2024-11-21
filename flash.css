@@ -1,0 +1,312 @@
+/* Variables (CSS custom properties) */
+/* Pop-up Overlay Styling */
+.analyzing-popup {
+  display: none; /* Hidden initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+
+:root {
+    --white: #FCFCFC;
+    --gray: #CBCDD3;
+    --dark: #777777;
+    --error: #EF8D9C;
+    --orange: #FFC39E;
+    --success: #B0DB7D;
+    --secondary: #99DBB4;
+    --font:'Outfit', sans-serif;
+  }
+  
+  /* Import font */
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&display=swap');
+
+  /* Basic Styles */
+  html {
+    display: grid;
+    min-height: 100%;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif;
+    display: grid;
+    overflow: hidden;
+    font-family: var(--font);
+    
+  }
+  
+  #container {
+    width: 40vw; /* Relative to viewport width */
+    max-width: 400px; /* Max width for larger screens */
+    height: 40vh; /* Relative to viewport height */
+    max-height: 400px; /* Max height for larger screens */
+    padding: 30px 20px;
+    background: linear-gradient(to bottom right, #A0E4B0, #B0DB7D);
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Relative for inner positioning */
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    font-weight: 350;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    color: var(--white);
+    padding-bottom: 5px;
+    font-family: 'Outfit', sans-serif; 
+  }
+  
+  .green {
+    color: var(--secondary);
+  }
+  
+  .red {
+    color: var(--error);
+  }
+  
+  .alert {
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+  
+  p {
+    font-size: 1em;
+    color: var(--dark);
+    font-weight: 350;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  button, .dot {
+    cursor: pointer;
+  }
+  
+  #success-box {
+    width: 100%; /* Full width of #container */
+    height: 100%; /* Full height of #container */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, var(--success) 40%, var(--secondary) 100%);
+    border-radius: 20px;
+  }
+  
+  #error-box {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    right: 12%;
+    background: linear-gradient(to bottom left, var(--error) 40%, var(--orange) 100%);
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(203, 205, 211, 0.1);
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    right: 6%;
+  }
+  
+  .dot:hover {
+    background: #e6e6e6; /* Darken effect */
+  }
+  
+  .two {
+    right: 12%;
+    opacity: .5;
+  }
+  
+  .face {
+    width: 50px;
+    height: 50px;
+    background: var(--white);
+    border-radius: 50%;
+    border: 1px solid var(--dark);
+    margin-bottom: 20px;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  .face2 {
+    position: absolute;
+    width: 22%;
+    height: 22%;
+    background: var(--white);
+    border-radius: 50%;
+    border: 1px solid var(--dark);
+    top: 21%;
+    left: 37.5%;
+    z-index: 2;
+    animation: roll 3s ease-in-out infinite;
+  }
+  
+  .eye {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: var(--dark);
+    border-radius: 50%;
+    top: 40%;
+    left: 20%;
+  }
+  
+  .right {
+    left: 68%;
+  }
+  
+  .mouth {
+    position: absolute;
+    top: 43%;
+    left: 41%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+  
+  .happy {
+    border: 2px solid;
+    border-color: transparent var(--dark) var(--dark) transparent;
+    transform: rotate(45deg);
+  }
+  
+  .sad {
+    top: 49%;
+    border: 2px solid;
+    border-color: var(--dark) transparent transparent var(--dark);
+    transform: rotate(45deg);
+  }
+  
+  .shadow {
+    position: absolute;
+    width: 21%;
+    height: 3%;
+    opacity: .5;
+    background: var(--dark);
+    left: 40%;
+    top: 43%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .scale {
+    animation: scale 1s ease-in infinite;
+  }
+  
+  .move {
+    animation: move 3s ease-in-out infinite;
+  }
+  
+  .message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-box {
+    position: absolute;
+    background: var(--white);
+    width: 50%;
+    height: 15%;
+    border-radius: 20px;
+    top: 73%;
+    left: 25%;
+    outline: 0;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.5);
+    transition: all .5s ease-in-out;
+  }
+  
+  .button-box:hover {
+    background: #e6e6e6; /* Slight darken effect */
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes bounce {
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes scale {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: rotate(0deg);
+      left: 25%;
+    }
+    50% {
+      left: 60%;
+      transform: rotate(168deg);
+    }
+    100% {
+      transform: rotate(0deg);
+      left: 25%;
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      left: 25%;
+    }
+    50% {
+      left: 60%;
+    }
+    100% {
+      left: 25%;
+    }
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    font-family: var(--font);
+  }
+  
+  footer p {
+    color: var(--error);
+    letter-spacing: 2px;
+  }
+  
+  footer a {
+    color: var(--success);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: var(--orange);
+  }
+  
+

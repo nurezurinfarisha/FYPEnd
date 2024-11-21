@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EmoSync - Music Emotion Recognition</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animation.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/play.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/musicplayer.css') }}" /> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flash.css') }}" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/emosyncLogo1new.png') }}" />
+</head>
+<body>
+    
+    <!--Header-->
+    <custom-header></custom-header>
+    <!--Header-->
+
+    <!-- Wrapper for main content and music library -->
+    <div class="container-wrapper">
+        <!-- Main Content -->
+        <div class="home_main">
+            <div class="hm_gradient-1"></div>
+            <div class="hm_gradient-2"></div>
+            <div class="container hm_cont">
+                <span class="home_text">
+                    <h1 class="">Music Emotion Recognition</h1>
+                    <h3>Hybrid Model Based on Rhythm and Lyrical Analysis</h3>
+                                     
+                </span>
+            </div>
+        </div>
+
+        <!-- Music Library Container -->
+        <div class="music-player">
+            <div class="player-header">
+                <h2>Play A Music</h2>
+                <img src="/static/images/shuffle.png" alt="Shuffle" id="shuffle-button">
+            </div>
+            <div class="song-list">
+                <!-- Placeholder for dynamic song list populated by play.js -->
+            </div>
+        </div>
+        <!-- Next Page Button -->
+        <a href="{{ url_for('index2') }}" class="next-page-btn">
+            <i class="fas fa-angle-double-right"></i>
+        </a>        
+    </div>
+    <div id="analyzingPopup" class="analyzing-popup">
+        <div id="container">
+            <div id="success-box">
+                <div class="dot"></div>
+                <div class="dot two"></div>
+                <div class="face">
+                    <div class="eye"></div>
+                    <div class="eye right"></div>
+                    <div class="mouth happy"></div>
+                </div>
+                <div class="shadow scale"></div>
+                <div class="message">
+                    <h1 class="alert">ANALYZING</h1>
+                    <p>Rhythm & Lyrical Analysis In process...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="opacity" class="opacity"></div>
+
+    <!-- Hidden audio player for playing songs -->
+    <audio id="audioPlayer" hidden></audio>
+
+    <div id="music-player2" class="music-player2">
+        <img id="album-art" src="/static/images/default_album_art.png" alt="Album Art" class="album-art2">
+        
+        <div class="track-info2">
+            <span id="track-title">No song selected</span>
+        </div>
+        
+        <audio id="audio-player" class="custom-audio-player" controls style="display:none;">
+            <source id="audio-source" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div class="custom-audio-controls">
+
+            <div class="previous-btn" onclick="playPreviousTrack()">
+                <img src="/static/images/back-forward.png" alt="Previous" style="width: 30px;">
+            </div>
+            
+            <div class="play-pause-btn" onclick="togglePlayPause()">
+                <img id="play-icon" src="/static/images/play-button.png" alt="Play" style="width: 30px;">
+            </div>
+
+            <div class="next-btn" onclick="playNextTrack()">
+                <img src="/static/images/fast-foward.png" alt="Next" style="width: 30px;">
+            </div>
+            
+            <div class="progress-container">
+                <span id="current-time" class="time-display">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <span id="total-duration" class="time-display">0:00</span>
+            </div>
+
+            <div class="volume-control">
+                <img src="/static/images/high-volume.png" alt="Volume" style="width: 30px;">
+                <input type="range" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- JavaScript Files -->
+
+    <script>
+        const homeUrl = "{{ url_for('home') }}";
+    </script>
+    <script src="/path/to/header.js"></script>
+    
+    <script src="{{ url_for('static', filename='js/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/footer.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/play.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/musicplayer.js') }}"></script>
+
+</body>
+</html>
+

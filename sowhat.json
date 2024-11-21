@@ -1,0 +1,1402 @@
+[
+    {
+        "id": 1,
+        "title": "The Lazy Song",
+        "formatted_title": "The Lazy Song",
+        "image": "/static/images/cover/1.jpeg",
+        "file_path": "static/music2/1.mp3"
+    },
+    {
+        "id": 2,
+        "title": "Best Day Of My Life",
+        "formatted_title": "Best Day Of My Life",
+        "image": "/static/images/cover/2.jpeg",
+        "file_path": "static/music2/2.mp3"
+    },
+    {
+        "id": 3,
+        "title": "Cant Stop The Feelings",
+        "formatted_title": "Cant Stop The Feelings",
+        "image": "/static/images/cover/3.jpeg",
+        "file_path": "static/music2/3.mp3"
+    },
+    {
+        "id": 4,
+        "title": "HAttention",
+        "formatted_title": "Attention",
+        "image": "/static/images/cover/4.jpeg",
+        "file_path": "static/music2/4.mp3"
+    },
+    {
+        "id": 5,
+        "title": "A Sky Full Of Star",
+        "formatted_title": "A Sky Full Of Star",
+        "image": "/static/images/cover/5.jpeg",
+        "file_path": "static/music2/5.mp3"
+    },
+    {
+        "id": 6,
+        "title": "Paradise",
+        "formatted_title": "Paradise",
+        "image": "/static/images/cover/6.jpeg",
+        "file_path": "static/music2/6.mp3"
+    },
+    {
+        "id": 7,
+        "title": ",New Rules",
+        "formatted_title": ",New Rules",
+        "image": "/static/images/cover/7.jpeg",
+        "file_path": "static/music2/7.mp3"
+    },
+    {
+        "id": 8,
+        "title": "Uptown Funk",
+        "formatted_title": "Uptown Funk",
+        "image": "/static/images/cover/8.jpeg",
+        "file_path": "static/music2/8.mp3"
+    },
+    {
+        "id": 9,
+        "title": "Sugar",
+        "formatted_title": "Sugar",
+        "image": "/static/images/cover/9.jpeg",
+        "file_path": "static/music2/9.mp3"
+    },
+    {
+        "id": 10,
+        "title": "I Aint Worried",
+        "formatted_title": "I Aint Worried",
+        "image": "/static/images/cover/10.jpeg",
+        "file_path": "static/music2/10.mp3"
+    },
+    {
+        "id": 11,
+        "title": "I Feel It Coming",
+        "formatted_title": "I Feel It Coming",
+        "image": "/static/images/cover/11.jpeg",
+        "file_path": "static/music2/11.mp3"
+    },
+    {
+        "id": 12,
+        "title": "Happy",
+        "formatted_title": "Happy",
+        "image": "/static/images/cover/12.jpeg",
+        "file_path": "static/music2/12.mp3"
+    },
+    {
+        "id": 13,
+        "title": "Better When Im Dancing",
+        "formatted_title": "Better When Im Dancing",
+        "image": "/static/images/cover/13.jpeg",
+        "file_path": "static/music2/13.mp3"
+    },
+    {
+        "id": 14,
+        "title": "Cheerleader",
+        "formatted_title": "Cheerleader",
+        "image": "/static/images/cover/14.jpeg",
+        "file_path": "static/music2/14.mp3"
+    },
+    {
+        "id": 15,
+        "title": "Shape Of You",
+        "formatted_title": "Shape Of You",
+        "image": "/static/images/cover/15.jpeg",
+        "file_path": "static/music2/15.mp3"
+    },
+    {
+        "id": 16,
+        "title": "Sunflower",
+        "formatted_title": "Sunflower",
+        "image": "/static/images/cover/16.jpeg",
+        "file_path": "static/music2/16.mp3"
+    },
+    {
+        "id": 17,
+        "title": "Sunflower",
+        "formatted_title": "Sunflower",
+        "image": "/static/images/cover/17.jpeg",
+        "file_path": "static/music2/17.mp3"
+    },
+    {
+        "id": 18,
+        "title": "Better Days",
+        "formatted_title": "Better Days",
+        "image": "/static/images/cover/18.jpeg",
+        "file_path": "static/music2/18.mp3"
+    },
+    {
+        "id": 19,
+        "title": "Shake It Off",
+        "formatted_title": "Shake It Off",
+        "image": "/static/images/cover/19.jpeg",
+        "file_path": "static/music2/19.mp3"
+    },
+    {
+        "id": 20,
+        "title": "Fallen Leaves",
+        "formatted_title": "Fallen Leaves",
+        "image": "/static/images/cover/20.jpeg",
+        "file_path": "static/music2/21.mp3"
+    },
+    {
+        "id": 21,
+        "title": "Red Flag",
+        "formatted_title": "Red Flag",
+        "image": "/static/images/cover/21.jpeg",
+        "file_path": "static/music2/21.mp3"
+    },
+    {
+        "id": 22,
+        "title": "Breath",
+        "formatted_title": "Breath",
+        "image": "/static/images/cover/118.jpeg",
+        "file_path": "static/music2/118.mp3"
+    },
+    {
+        "id": 23,
+        "title": "Lets Get It Started",
+        "formatted_title": "Lets Get It Started",
+        "image": "/static/images/cover/23.jpeg",
+        "file_path": "static/music2/23.mp3"
+    },
+    {
+        "id": 24,
+        "title": "Cut Me Out",
+        "formatted_title": "Cut Me Out",
+        "image": "/static/images/cover/24.jpeg",
+        "file_path": "static/music2/24.mp3"
+    },
+    {
+        "id": 25,
+        "title": "One in A Million",
+        "formatted_title": "One in A Million",
+        "image": "/static/images/cover/25.jpeg",
+        "file_path": "static/music2/25.mp3"
+    },
+    {
+        "id": 26,
+        "title": "You're So Beautiful",
+        "formatted_title": "You're So Beautiful",
+        "image": "/static/images/cover/26.jpeg",
+        "file_path": "static/music2/26.mp3"
+    },
+    {
+        "id": 27,
+        "title": "Right Round",
+        "formatted_title": "Right Round",
+        "image": "/static/images/cover/27.jpeg",
+        "file_path": "static/music2/27.mp3"
+    },
+    {
+        "id": 28,
+        "title": "Radioactive",
+        "formatted_title": "Radioactive",
+        "image": "/static/images/cover/28.jpeg",
+        "file_path": "static/music2/28.mp3"
+    },
+    {
+        "id": 29,
+        "title": "Waving Flag",
+        "formatted_title": "Waving Flag",
+        "image": "/static/images/cover/29.jpeg",
+        "file_path": "static/music2/29.mp3"
+    },
+    {
+        "id": 30,
+        "title": "Firework",
+        "formatted_title": "Firework",
+        "image": "/static/images/cover/30.jpeg",
+        "file_path": "static/music2/30.mp3"
+    },
+    {
+        "id": 31,
+        "title": "I Kissed a Girl",
+        "formatted_title": "I Kissed a Girl",
+        "image": "/static/images/cover/31.jpeg",
+        "file_path": "static/music2/31.mp3"
+    },
+    {
+        "id": 32,
+        "title": "Dancing With Tears In My Eyes",
+        "formatted_title": "Dancing With Tears In My Eyes",
+        "image": "/static/images/cover/32.jpeg",
+        "file_path": "static/music2/32.mp3"
+    },
+    {
+        "id": 33,
+        "title": "Just Danced",
+        "formatted_title": "Just Danced",
+        "image": "/static/images/cover/33.jpeg",
+        "file_path": "static/music2/33.mp3"
+    },
+    {
+        "id": 34,
+        "title": "Bang Bang",
+        "formatted_title": "Bang Bang",
+        "image": "/static/images/cover/34.jpeg",
+        "file_path": "static/music2/34.mp3"
+    },
+    {
+        "id": 35,
+        "title": "Lets Get Crazy",
+        "formatted_title": "Lets Get Crazy",
+        "image": "/static/images/cover/35.jpeg",
+        "file_path": "static/music2/35.mp3"
+    },
+    {
+        "id": 36,
+        "title": "Best Song Ever",
+        "formatted_title": "Best Song Ever",
+        "image": "/static/images/cover/36.jpeg",
+        "file_path": "static/music2/36.mp3"
+    },
+    {
+        "id": 37,
+        "title": "Live While you are Young",
+        "formatted_title": "Live While you are Young",
+        "image": "/static/images/cover/37.jpeg",
+        "file_path": "static/music2/37.mp3"
+    },
+    {
+        "id": 38,
+        "title": "What Makes You Beautiful",
+        "formatted_title": "What Makes You Beautiful",
+        "image": "/static/images/cover/38.jpeg",
+        "file_path": "static/music2/38.mp3"
+    },
+    {
+        "id": 39,
+        "title": "All The Right Moves",
+        "formatted_title": "All The Right Moves",
+        "image": "/static/images/cover/39.jpeg",
+        "file_path": "static/music2/39.mp3"
+    },
+    {
+        "id": 40,
+        "title": "I Wanna Dance with Somebody",
+        "formatted_title": "I Wanna Dance with Somebody",
+        "image": "/static/images/cover/40.jpeg",
+        "file_path": "static/music2/40.mp3"
+    },
+    {
+        "id": 41,
+        "title": "Wake Me Up Before You Go Go",
+        "formatted_title": "Wake Me Up Before You Go Go",
+        "image": "/static/images/cover/41.jpeg",
+        "file_path": "static/music2/41.mp3"
+    },
+    {
+        "id": 42,
+        "title": "Twist and Shout",
+        "formatted_title": "Twist and Shout",
+        "image": "/static/images/cover/42.jpeg",
+        "file_path": "static/music2/42.mp3"
+    },
+    {
+        "id": 43,
+        "title": "Dynamite",
+        "formatted_title": "Dynamite",
+        "image": "/static/images/cover/43.jpeg",
+        "file_path": "static/music2/43.mp3"
+    },
+    {
+        "id": 44,
+        "title": "California Girls",
+        "formatted_title": "California Girls",
+        "image": "/static/images/cover/44.jpeg",
+        "file_path": "static/music2/44.mp3"
+    },
+    {
+        "id": 45,
+        "title": "Cruel Summer",
+        "formatted_title": "Cruel Summer",
+        "image": "/static/images/cover/45.jpeg",
+        "file_path": "static/music2/45.mp3"
+    },
+    {
+        "id": 46,
+        "title": "Single Ladies",
+        "formatted_title": "Single Ladies",
+        "image": "/static/images/cover/46.jpeg",
+        "file_path": "static/music2/46.mp3"
+    },
+    {
+        "id": 47,
+        "title": "Staying Alive",
+        "formatted_title": "Staying Alive",
+        "image": "/static/images/cover/47.jpeg",
+        "file_path": "static/music2/47.mp3"
+    },
+    {
+        "id": 48,
+        "title": "Dancing Queen",
+        "formatted_title": "Dancing Queen",
+        "image": "/static/images/cover/48.jpeg",
+        "file_path": "static/music2/48.mp3"
+    },
+    {
+        "id": 49,
+        "title": "Uptown Girl",
+        "formatted_title": "Uptown Girl",
+        "image": "/static/images/cover/49.jpeg",
+        "file_path": "static/music2/49.mp3"
+    },
+    {
+        "id": 50,
+        "title": "Cake by The Ocean",
+        "formatted_title": "Cake by The Ocean",
+        "image": "/static/images/cover/50.jpeg",
+        "file_path": "static/music2/50.mp3"
+    },
+    {
+        "id": 51,
+        "title": "Rolling in the Deep",
+        "formatted_title": "Rolling in the Deep",
+        "image": "/static/images/cover/51.jpeg",
+        "file_path": "static/music2/51.mp3"
+    },
+    {
+        "id": 52,
+        "title": "Girlfriend",
+        "formatted_title": "Girlfriend",
+        "image": "/static/images/cover/52.jpeg",
+        "file_path": "static/music2/52.mp3"
+    },
+    {
+        "id": 53,
+        "title": "Its My Life",
+        "formatted_title": "Its My Life",
+        "image": "/static/images/cover/53.jpeg",
+        "file_path": "static/music2/53.mp3"
+    },
+    {
+        "id": 54,
+        "title": "Bring Me To Life",
+        "formatted_title": "Bring Me To Life",
+        "image": "/static/images/cover/54.jpeg",
+        "file_path": "static/music2/54.mp3"
+    },
+    {
+        "id": 55,
+        "title": "Everybody Fool",
+        "formatted_title": "Everybody Fool",
+        "image": "/static/images/cover/55.jpeg",
+        "file_path": "static/music2/55.mp3"
+    },
+    {
+        "id": 56,
+        "title": "Ignorance",
+        "formatted_title": "Ignorance",
+        "image": "/static/images/cover/56.jpeg",
+        "file_path": "static/music2/56.mp3"
+    },
+    {
+        "id": 57,
+        "title": "Demons",
+        "formatted_title": "Demons",
+        "image": "/static/images/cover/57.jpeg",
+        "file_path": "static/music2/57.mp3"
+    },
+    {
+        "id": 58,
+        "title": "Numb",
+        "formatted_title": "Numb",
+        "image": "/static/images/cover/58.jpeg",
+        "file_path": "static/music2/150.mp3"
+    },
+    {
+        "id": 59,
+        "title": "Decode",
+        "formatted_title": "Decode",
+        "image": "/static/images/cover/59.jpeg",
+        "file_path": "static/music2/151.mp3"
+    },
+    {
+        "id": 60,
+        "title": "Picture to Burn",
+        "formatted_title": "Picture to Burn",
+        "image": "/static/images/cover/60.jpeg",
+        "file_path": "static/music2/152.mp3"
+    },
+    {
+        "id": 61,
+        "title": "Stab my back",
+        "formatted_title": "Stab my back",
+        "image": "/static/images/cover/61.jpeg",
+        "file_path": "static/music2/153.mp3"
+    },
+    {
+        "id": 62,
+        "title": "Ultranumb",
+        "formatted_title": "Ultranumb",
+        "image": "/static/images/cover/62.jpeg",
+        "file_path": "static/music2/62.mp3"
+    },
+    {
+        "id": 63,
+        "title": "I Will Not Bow",
+        "formatted_title": "I Will Not Bow",
+        "image": "/static/images/cover/63.jpeg",
+        "file_path": "static/music2/63.mp3"
+    },
+    {
+        "id": 64,
+        "title": "Into the Nothing",
+        "formatted_title": "Into the Nothing",
+        "image": "/static/images/cover/64.jpeg",
+        "file_path": "static/music2/64.mp3"
+    },
+    {
+        "id": 65,
+        "title": "In the End",
+        "formatted_title": "In the End",
+        "image": "/static/images/cover/65.jpeg",
+        "file_path": "static/music2/65.mp3"
+    },
+    {
+        "id": 66,
+        "title": "Edge and Pearl",
+        "formatted_title": "Edge and Pearl",
+        "image": "/static/images/cover/66.jpeg",
+        "file_path": "static/music2/66.mp3"
+    },
+    {
+        "id": 67,
+        "title": "Edge and Pearl",
+        "formatted_title": "Edge and Pearl",
+        "image": "/static/images/cover/67.jpeg",
+        "file_path": "static/music2/67.mp3"
+    },
+    {
+        "id": 68,
+        "title": "I'm Picky",
+        "formatted_title": "I'm Picky",
+        "image": "/static/images/cover/68.jpeg",
+        "file_path": "static/music2/68.mp3"
+    },
+    {
+        "id": 69,
+        "title": "Where Did The Angels Go",
+        "formatted_title": "Where Did The Angels Go",
+        "image": "/static/images/cover/69.jpeg",
+        "file_path": "static/music2/69.mp3"
+    },
+    {
+        "id": 70,
+        "title": "I Hate Everything About You",
+        "formatted_title": "I Hate Everything About You",
+        "image": "/static/images/cover/70.jpeg",
+        "file_path": "static/music2/70.mp3"
+    },
+    {
+        "id": 71,
+        "title": "Let it Die",
+        "formatted_title": "Let it Die",
+        "image": "/static/images/cover/71.jpeg",
+        "file_path": "static/music2/71.mp3"
+    },
+    {
+        "id": 72,
+        "title": "Riot",
+        "formatted_title": "Riot",
+        "image": "/static/images/cover/72.jpeg",
+        "file_path": "static/music2/72.mp3"
+    },
+    {
+        "id": 73,
+        "title": "Teenagers",
+        "formatted_title": "Teenagers",
+        "image": "/static/images/cover/73.jpeg",
+        "file_path": "static/music2/73.mp3"
+    },
+    {
+        "id": 74,
+        "title": "Night of the Hunter",
+        "formatted_title": "Night of the Hunter",
+        "image": "/static/images/cover/74.jpeg",
+        "file_path": "static/music2/74.mp3"
+    },
+    {
+        "id": 75,
+        "title": "Force",
+        "formatted_title": "Force",
+        "image": "/static/images/cover/75.jpeg",
+        "file_path": "static/music2/75.mp3"
+    },
+    {
+        "id": 76,
+        "title": "You Dont Know Me",
+        "formatted_title": "You Dont Know Me",
+        "image": "/static/images/cover/76.jpeg",
+        "file_path": "static/music2/76.mp3"
+    },
+    {
+        "id": 77,
+        "title": "Frozen",
+        "formatted_title": "Frozen",
+        "image": "/static/images/cover/77.jpeg",
+        "file_path": "static/music2/77.mp3"
+    },
+    {
+        "id": 78,
+        "title": "Louder than Words",
+        "formatted_title": "Louder than Words",
+        "image": "/static/images/cover/78.jpeg",
+        "file_path": "static/music2/78.mp3"
+    },
+    {
+        "id": 79,
+        "title": "Death from above",
+        "formatted_title": "Death from above",
+        "image": "/static/images/cover/79.jpeg",
+        "file_path": "static/music2/79.mp3"
+    },
+    {
+        "id": 80,
+        "title": "Poolside",
+        "formatted_title": "Poolside",
+        "image": "/static/images/cover/80.jpeg",
+        "file_path": "static/music2/171.mp3"
+    },
+    {
+        "id": 81,
+        "title": "Unity",
+        "formatted_title": "Unity",
+        "image": "/static/images/cover/81.jpeg",
+        "file_path": "static/music2/172.mp3"
+    },
+    {
+        "id": 82,
+        "title": "Ultranumb",
+        "formatted_title": "Ultranumb",
+        "image": "/static/images/cover/82.jpeg",
+        "file_path": "static/music2/173.mp3"
+    },
+    {
+        "id": 83,
+        "title": "The Bleeding",
+        "formatted_title": "The Bleeding",
+        "image": "/static/images/cover/83.jpeg",
+        "file_path": "static/music2/174.mp3"
+    },
+    {
+        "id": 84,
+        "title": "The Enemy Inside",
+        "formatted_title": "The Enemy Inside",
+        "image": "/static/images/cover/84.jpeg",
+        "file_path": "static/music2/84.mp3"
+    },
+    {
+        "id": 85,
+        "title": "Two Miniutes to Midnight",
+        "formatted_title": "Two Miniutes to Midnight",
+        "image": "/static/images/cover/85.jpeg",
+        "file_path": "static/music2/85.mp3"
+    },
+    {
+        "id": 86,
+        "title": "War",
+        "formatted_title": "War",
+        "image": "/static/images/cover/86.jpeg",
+        "file_path": "static/music2/86.mp3"
+    },
+    {
+        "id": 87,
+        "title": "War Pigs",
+        "formatted_title": "War Pigs",
+        "image": "/static/images/cover/87.jpeg",
+        "file_path": "static/music2/87.mp3"
+    },
+    {
+        "id": 88,
+        "title": "You Should Be Dead",
+        "formatted_title": "You Should Be Dead",
+        "image": "/static/images/cover/88.jpeg",
+        "file_path": "static/music2/88.mp3"
+    },
+    {
+        "id": 89,
+        "title": "Animal I Have Become",
+        "formatted_title": "Animal I Have Become",
+        "image": "/static/images/cover/89.jpeg",
+        "file_path": "static/music2/89.mp3"
+    },
+    {
+        "id": 90,
+        "title": "London Calling",
+        "formatted_title": "London Calling",
+        "image": "/static/images/cover/90.jpeg",
+        "file_path": "static/music2/90.mp3"
+    },
+    {
+        "id": 91,
+        "title": "Renegade",
+        "formatted_title": "Renegade",
+        "image": "/static/images/cover/91.jpeg",
+        "file_path": "static/music2/91.mp3"
+    },
+    {
+        "id": 92,
+        "title": "Prision Song",
+        "formatted_title": "Prision Song",
+        "image": "/static/images/cover/92.jpeg",
+        "file_path": "static/music2/92.mp3"
+    },
+    {
+        "id": 93,
+        "title": "Platypus",
+        "formatted_title": "Platypus",
+        "image": "/static/images/cover/93.jpeg",
+        "file_path": "static/music2/93.mp3"
+    },
+    {
+        "id": 94,
+        "title": "Lose Yourself",
+        "formatted_title": "Lose Yourself",
+        "image": "/static/images/cover/94.jpeg",
+        "file_path": "static/music2/94.mp3"
+    },
+    {
+        "id": 95,
+        "title": "Killing in the Name",
+        "formatted_title": "Killing in the Name",
+        "image": "/static/images/cover/95.jpeg",
+        "file_path": "static/music2/95.mp3"
+    },
+    {
+        "id": 96,
+        "title": "Eye of the Tiger",
+        "formatted_title": "Eye of the Tiger",
+        "image": "/static/images/cover/96.jpeg",
+        "file_path": "static/music2/96.mp3"
+    },
+    {
+        "id": 97,
+        "title": "Dead Bodies Everywhere",
+        "formatted_title": "Dead Bodies Everywhere",
+        "image": "/static/images/cover/97.jpeg",
+        "file_path": "static/music2/97.mp3"
+    },
+    {
+        "id": 98,
+        "title": "Last Resort",
+        "formatted_title": "Last Resort",
+        "image": "/static/images/cover/98.jpeg",
+        "file_path": "static/music2/98.mp3"
+    },
+    {
+        "id": 99,
+        "title": "Bring Your Whole Crew",
+        "formatted_title": "Bring Your Whole Crew",
+        "image": "/static/images/cover/99.jpeg",
+        "file_path": "static/music2/99.mp3"
+    },
+    {
+        "id": 100,
+        "title": "I Fucking Hate You",
+        "formatted_title": "I Fucking Hate You",
+        "image": "/static/images/cover/19.jpeg",
+        "file_path": "static/music2/100.mp3"
+    },
+    {
+        "id": 101,
+        "title": "How Far Ill Go",
+        "formatted_title": "How Far Ill Go",
+        "image": "/static/images/cover/101.jpeg",
+        "file_path": "static/music2/101.mp3"
+    },
+    {
+        "id": 102,
+        "title": "Photograph",
+        "formatted_title": "Photograph",
+        "image": "/static/images/cover/102.jpeg",
+        "file_path": "static/music2/102.mp3"
+    },
+    {
+        "id": 103,
+        "title": "Flashlight",
+        "formatted_title": "Flashlight",
+        "image": "/static/images/cover/103.jpeg",
+        "file_path": "static/music2/103.mp3"
+    },
+    {
+        "id": 104,
+        "title": "All Of Me",
+        "formatted_title": "All Of Me",
+        "image": "/static/images/cover/104.jpeg",
+        "file_path": "static/music2/104.mp3"
+    },
+    {
+        "id": 105,
+        "title": "7 years",
+        "formatted_title": "7 years",
+        "image": "/static/images/cover/105.jpeg",
+        "file_path": "static/music2/105.mp3"
+    },
+    {
+        "id": 106,
+        "title": "Only Love Can Hurt Like This",
+        "formatted_title": "Only Love Can Hurt Like This",
+        "image": "/static/images/cover/106.jpeg",
+        "file_path": "static/music2/106.mp3"
+    },
+    {
+        "id": 107,
+        "title": "Dandelions",
+        "formatted_title": "Dandelions",
+        "image": "/static/images/cover/107.jpeg",
+        "file_path": "static/music2/107.mp3"
+    },
+    {
+        "id": 108,
+        "title": "A Million Dreams",
+        "formatted_title": "A Million Dreams",
+        "image": "/static/images/cover/108.jpeg",
+        "file_path": "static/music2/108.mp3"
+    },
+    {
+        "id": 109,
+        "title": "2 Song",
+        "formatted_title": "2 Song",
+        "image": "/static/images/cover/109.jpeg",
+        "file_path": "static/music2/109.mp3"
+    },
+    {
+        "id": 110,
+        "title": "My Love",
+        "formatted_title": "My Love",
+        "image": "/static/images/cover/110.jpeg",
+        "file_path": "static/music2/110.mp3"
+    },
+    {
+        "id": 111,
+        "title": "See You Again",
+        "formatted_title": "See You Again",
+        "image": "/static/images/cover/111.jpeg",
+        "file_path": "static/music2/22.mp3"
+    },
+    {
+        "id": 112,
+        "title": "Absolutely - Story of A Girl",
+        "formatted_title": "Absolutely - Story of A Girl",
+        "image": "/static/images/cover/112.jpeg",
+        "file_path": "static/music2/112.mp3"
+    },
+    {
+        "id": 113,
+        "title": "Faded",
+        "formatted_title": "Faded",
+        "image": "/static/images/cover/113.jpeg",
+        "file_path": "static/music2/113.mp3"
+    },
+    {
+        "id": 114,
+        "title": "Total Eclipse of the Heart",
+        "formatted_title": "Total Eclipse of the Heart",
+        "image": "/static/images/cover/114.jpeg",
+        "file_path": "static/music2/114.mp3"
+    },
+    {
+        "id": 115,
+        "title": "Heart Attack",
+        "formatted_title": "Heart Attack",
+        "image": "/static/images/cover/115.jpeg",
+        "file_path": "static/music2/115.mp3"
+    },
+    {
+        "id": 116,
+        "title": "Used To Be Young",
+        "formatted_title": "Used To Be Young",
+        "image": "/static/images/cover/116.jpeg",
+        "file_path": "static/music2/116.mp3"
+    },
+    {
+        "id": 117,
+        "title": "Fire On Fire",
+        "formatted_title": "Fire On Fire",
+        "image": "/static/images/cover/117.jpeg",
+        "file_path": "static/music2/117.mp3"
+    },
+    {
+        "id": 118,
+        "title": "Take Me Away",
+        "formatted_title": "Take Me Away",
+        "image": "/static/images/cover/118.jpeg",
+        "file_path": "static/music2/118.mp3"
+    },
+    {
+        "id": 119,
+        "title": "Here With Me",
+        "formatted_title": "Here With Me",
+        "image": "/static/images/cover/119.jpeg",
+        "file_path": "static/music2/119.mp3"
+    },
+    {
+        "id": 120,
+        "title": "Use Somebody",
+        "formatted_title": "Use Somebody",
+        "image": "/static/images/cover/120.jpeg",
+        "file_path": "static/music2/120.mp3"
+    },
+    {
+        "id": 121,
+        "title": "Train Wreck",
+        "formatted_title": "Train Wreck",
+        "image": "/static/images/cover/121.jpeg",
+        "file_path": "static/music2/121.mp3"
+    },
+    {
+        "id": 122,
+        "title": "Roads Untraveled",
+        "formatted_title": "Roads Untraveled",
+        "image": "/static/images/cover/122.jpeg",
+        "file_path": "static/music2/122.mp3"
+    },
+    {
+        "id": 123,
+        "title": "Can't Forget You",
+        "formatted_title": "Can't Forget You",
+        "image": "/static/images/cover/123.jpeg",
+        "file_path": "static/music2/123.mp3"
+    },
+    {
+        "id": 124,
+        "title": "Without You",
+        "formatted_title": "Without You",
+        "image": "/static/images/cover/124.jpeg",
+        "file_path": "static/music2/124.mp3"
+    },
+    {
+        "id": 125,
+        "title": "Hero Of War",
+        "formatted_title": "Hero Of War",
+        "image": "/static/images/cover/125.jpeg",
+        "file_path": "static/music2/125.mp3"
+    },
+    {
+        "id": 126,
+        "title": "How Could This Happen To Me",
+        "formatted_title": "How Could This Happen To Me",
+        "image": "/static/images/cover/126.jpeg",
+        "file_path": "static/music2/126.mp3"
+    },
+    {
+        "id": 127,
+        "title": "Lonely Day",
+        "formatted_title": "Lonely Day",
+        "image": "/static/images/cover/127.jpeg",
+        "file_path": "static/music2/127.mp3"
+    },
+    {
+        "id": 128,
+        "title": "Love Story",
+        "formatted_title": "Love Story",
+        "image": "/static/images/cover/128.jpeg",
+        "file_path": "static/music2/128.mp3"
+    },
+    {
+        "id": 129,
+        "title": "it will be okay",
+        "formatted_title": "it will be okay",
+        "image": "/static/images/cover/129.jpeg",
+        "file_path": "static/music2/129.mp3"
+    },
+    {
+        "id": 130,
+        "title": "Over and Over",
+        "formatted_title": "Over and Over",
+        "image": "/static/images/cover/130.jpeg",
+        "file_path": "static/music2/130.mp3"
+    },
+    {
+        "id": 131,
+        "title": "40",
+        "formatted_title": "40",
+        "image": "/static/images/cover/131.jpeg",
+        "file_path": "static/music2/131.mp3"
+    },
+    {
+        "id": 132,
+        "title": "Home",
+        "formatted_title": "Home",
+        "image": "/static/images/cover/132.jpeg",
+        "file_path": "static/music2/132.mp3"
+    },
+    {
+        "id": 133,
+        "title": "Touched",
+        "formatted_title": "Touched",
+        "image": "/static/images/cover/133.jpeg",
+        "file_path": "static/music2/133.mp3"
+    },
+    {
+        "id": 134,
+        "title": "easy on me",
+        "formatted_title": "easy on me",
+        "image": "/static/images/cover/134.jpeg",
+        "file_path": "static/music2/134.mp3"
+    },
+    {
+        "id": 135,
+        "title": "perfect",
+        "formatted_title": "perfect",
+        "image": "/static/images/cover/135.jpeg",
+        "file_path": "static/music2/135.mp3"
+    },
+    {
+        "id": 136,
+        "title": "For the Love of a Daughter",
+        "formatted_title": "For the Love of a Daughter",
+        "image": "/static/images/cover/136.jpeg",
+        "file_path": "static/music2/136.mp3"
+    },
+    {
+        "id": 137,
+        "title": "Hello",
+        "formatted_title": "Hello",
+        "image": "/static/images/cover/137.jpeg",
+        "file_path": "static/music2/137.mp3"
+    },
+    {
+        "id": 138,
+        "title": "Home",
+        "formatted_title": "Home",
+        "image": "/static/images/cover/138.jpeg",
+        "file_path": "static/music2/138.mp3"
+    },
+    {
+        "id": 139,
+        "title": "Say Something",
+        "formatted_title": "Say Something",
+        "image": "/static/images/cover/139.jpeg",
+        "file_path": "static/music2/139.mp3"
+    },
+    {
+        "id": 140,
+        "title": "Angel",
+        "formatted_title": "Angel",
+        "image": "/static/images/cover/140.jpeg",
+        "file_path": "static/music2/140.mp3"
+    },
+    {
+        "id": 141,
+        "title": "Everybody Hurts",
+        "formatted_title": "Everybody Hurts",
+        "image": "/static/images/cover/141.jpeg",
+        "file_path": "static/music2/141.mp3"
+    },
+    {
+        "id": 142,
+        "title": "Sacrifice",
+        "formatted_title": "Sacrifice",
+        "image": "/static/images/cover/142.jpeg",
+        "file_path": "static/music2/142.mp3"
+    },
+    {
+        "id": 143,
+        "title": "Surrender",
+        "formatted_title": "Surrender",
+        "image": "/static/images/cover/143.jpeg",
+        "file_path": "static/music2/143.mp3"
+    },
+    {
+        "id": 144,
+        "title": "Creep",
+        "formatted_title": "Creep",
+        "image": "/static/images/cover/144.jpeg",
+        "file_path": "static/music2/144.mp3"
+    },
+    {
+        "id": 145,
+        "title": "What Was I Made For",
+        "formatted_title": "What Was I Made For",
+        "image": "/static/images/cover/145.jpeg",
+        "file_path": "static/music2/145.mp3"
+    },
+    {
+        "id": 146,
+        "title": "Dance with my Father",
+        "formatted_title": "Dance with my Father",
+        "image": "/static/images/cover/146.jpeg",
+        "file_path": "static/music2/146.mp3"
+    },
+    {
+        "id": 147,
+        "title": "1 World",
+        "formatted_title": "1 World",
+        "image": "/static/images/cover/147.jpeg",
+        "file_path": "static/music2/147.mp3"
+    },
+    {
+        "id": 148,
+        "title": "When I Was Your Man",
+        "formatted_title": "When I Was Your Man",
+        "image": "/static/images/cover/148.jpeg",
+        "file_path": "static/music2/148.mp3"
+    },
+    {
+        "id": 149,
+        "title": "Broken Strings",
+        "formatted_title": "Broken Strings",
+        "image": "/static/images/cover/149.jpeg",
+        "file_path": "static/music2/149.mp3"
+    },
+    {
+        "id": 150,
+        "title": "Gloomy Sunday",
+        "formatted_title": "Gloomy Sunday",
+        "image": "/static/images/cover/150.jpeg",
+        "file_path": "static/music2/58.mp3"
+    },
+    {
+        "id": 151,
+        "title": "A Thousand Years",
+        "formatted_title": "A Thousand Years",
+        "image": "/static/images/cover/151.jpeg",
+        "file_path": "static/music2/151.mp3"
+    },
+    {
+        "id": 152,
+        "title": "Heather",
+        "formatted_title": "Heather",
+        "image": "/static/images/cover/152.jpeg",
+        "file_path": "static/music2/152.mp3"
+    },
+    {
+        "id": 153,
+        "title": "Let It Go",
+        "formatted_title": "Let It Go",
+        "image": "/static/images/cover/153.jpeg",
+        "file_path": "static/music2/153.mp3"
+    },
+    {
+        "id": 154,
+        "title": "Golden Hour",
+        "formatted_title": "Golden Hour",
+        "image": "/static/images/cover/154.jpeg",
+        "file_path": "static/music2/154.mp3"
+    },
+    {
+        "id": 155,
+        "title": "Night Changes",
+        "formatted_title": "Night Changes",
+        "image": "/static/images/cover/155.jpeg",
+        "file_path": "static/music2/155.mp3"
+    },
+    {
+        "id": 156,
+        "title": "To The Bone",
+        "formatted_title": "To The Bone",
+        "image": "/static/images/cover/156.jpeg",
+        "file_path": "static/music2/156.mp3"
+    },
+    {
+        "id": 157,
+        "title": "Sunset Lover",
+        "formatted_title": "Sunset Lover",
+        "image": "/static/images/cover/157.jpeg",
+        "file_path": "static/music2/157.mp3"
+    },
+    {
+        "id": 158,
+        "title": "Fight Song",
+        "formatted_title": "Fight Song",
+        "image": "/static/images/cover/158.jpeg",
+        "file_path": "static/music2/158.mp3"
+    },
+    {
+        "id": 159,
+        "title": "Enchanted",
+        "formatted_title": "Enchanted",
+        "image": "/static/images/cover/159.jpeg",
+        "file_path": "static/music2/159.mp3"
+    },
+    {
+        "id": 160,
+        "title": "Paris",
+        "formatted_title": "Paris",
+        "image": "/static/images/cover/160.jpeg",
+        "file_path": "static/music2/160.mp3"
+    },
+    {
+        "id": 161,
+        "title": "PS I Love You",
+        "formatted_title": "PS I Love You",
+        "image": "/static/images/cover/161.jpeg",
+        "file_path": "static/music2/161.mp3"
+    },
+    {
+        "id": 162,
+        "title": "Moon Song",
+        "formatted_title": "Moon Song",
+        "image": "/static/images/cover/162.jpeg",
+        "file_path": "static/music2/162.mp3"
+    },
+    {
+        "id": 163,
+        "title": "Paint the Sky with Stars",
+        "formatted_title": "Paint the Sky with Stars",
+        "image": "/static/images/cover/163.jpeg",
+        "file_path": "static/music2/163.mp3"
+    },
+    {
+        "id": 164,
+        "title": "Sunrise",
+        "formatted_title": "Sunrise",
+        "image": "/static/images/cover/164.jpeg",
+        "file_path": "static/music2/164.mp3"
+    },
+    {
+        "id": 165,
+        "title": "Thank you Stars",
+        "formatted_title": "Thank you Stars",
+        "image": "/static/images/cover/165.jpeg",
+        "file_path": "static/music2/165.mp3"
+    },
+    {
+        "id": 166,
+        "title": "The Boy from Ipanema",
+        "formatted_title": "The Boy from Ipanema",
+        "image": "/static/images/cover/166.jpeg",
+        "file_path": "static/music2/166.mp3"
+    },
+    {
+        "id": 167,
+        "title": "The Boy from Ipanema",
+        "formatted_title": "The Boy from Ipanema",
+        "image": "/static/images/cover/167.jpeg",
+        "file_path": "static/music2/167.mp3"
+    },
+    {
+        "id": 168,
+        "title": "Those Sweet Words",
+        "formatted_title": "Those Sweet Words",
+        "image": "/static/images/cover/168.jpeg",
+        "file_path": "static/music2/168.mp3"
+    },
+    {
+        "id": 169,
+        "title": "What a Wonderful World",
+        "formatted_title": "What a Wonderful World",
+        "image": "/static/images/cover/169.jpeg",
+        "file_path": "static/music2/169.mp3"
+    },
+    {
+        "id": 170,
+        "title": "Country Confort",
+        "formatted_title": "Country Confort",
+        "image": "/static/images/cover/170.jpeg",
+        "file_path": "static/music2/170.mp3"
+    },
+    {
+        "id": 171,
+        "title": "Just The Way You are",
+        "formatted_title": "Just The Way You are",
+        "image": "/static/images/cover/171.jpeg",
+        "file_path": "static/music2/171.mp3"
+    },
+    {
+        "id": 172,
+        "title": "That's What Friends Are For",
+        "formatted_title": "That's What Friends Are For",
+        "image": "/static/images/cover/172.jpeg",
+        "file_path": "static/music2/172.mp3"
+    },
+    {
+        "id": 173,
+        "title": "Teenage Dream",
+        "formatted_title": "Teenage Dream",
+        "image": "/static/images/cover/173.jpeg",
+        "file_path": "static/music2/173.mp3"
+    },
+    {
+        "id": 174,
+        "title": "May it Be",
+        "formatted_title": "May it Be",
+        "image": "/static/images/cover/174.jpeg",
+        "file_path": "static/music2/8.mp3"
+    },
+    {
+        "id": 175,
+        "title": "Albedo 039",
+        "formatted_title": "Albedo 039",
+        "image": "/static/images/cover/175.jpeg",
+        "file_path": "static/music2/175.mp3"
+    },
+    {
+        "id": 176,
+        "title": "The Journey of the Angels",
+        "formatted_title": "The Journey of the Angels",
+        "image": "/static/images/cover/176.jpeg",
+        "file_path": "static/music2/176.mp3"
+    },
+    {
+        "id": 177,
+        "title": "Sleeping Child",
+        "formatted_title": "Sleeping Child",
+        "image": "/static/images/cover/177.jpeg",
+        "file_path": "static/music2/177.mp3"
+    },
+    {
+        "id": 178,
+        "title": "Top Of The World",
+        "formatted_title": "Top Of The World",
+        "image": "/static/images/cover/178.jpeg",
+        "file_path": "static/music2/178.mp3"
+    },
+    {
+        "id": 179,
+        "title": "I Still Havent Found What Im Looking For",
+        "formatted_title": "I Still Havent Found What Im Looking For",
+        "image": "/static/images/cover/179.jpeg",
+        "file_path": "static/music2/179.mp3"
+    },
+    {
+        "id": 180,
+        "title": "How Could Anyone",
+        "formatted_title": "How Could Anyone",
+        "image": "/static/images/cover/180.jpeg",
+        "file_path": "static/music2/180.mp3"
+    },
+    {
+        "id": 181,
+        "title": "Love Is Where You Are",
+        "formatted_title": "Love Is Where You Are",
+        "image": "/static/images/cover/181.jpeg",
+        "file_path": "static/music2/181.mp3"
+    },
+    {
+        "id": 182,
+        "title": "Lemon Tree",
+        "formatted_title": "Lemon Tree",
+        "image": "/static/images/cover/182.jpeg",
+        "file_path": "static/music2/182.mp3"
+    },
+    {
+        "id": 183,
+        "title": "Peace Train",
+        "formatted_title": "Peace Train",
+        "image": "/static/images/cover/183.jpeg",
+        "file_path": "static/music2/183.mp3"
+    },
+    {
+        "id": 184,
+        "title": "But Beautiful",
+        "formatted_title": "But Beautiful",
+        "image": "/static/images/cover/184.jpeg",
+        "file_path": "static/music2/184.mp3"
+    },
+    {
+        "id": 185,
+        "title": "I Am The Earth",
+        "formatted_title": "I Am The Earth",
+        "image": "/static/images/cover/185.jpeg",
+        "file_path": "static/music2/185.mp3"
+    },
+    {
+        "id": 186,
+        "title": "Friends Are Quiet Angels",
+        "formatted_title": "Friends Are Quiet Angels",
+        "image": "/static/images/cover/186.jpeg",
+        "file_path": "static/music2/186.mp3"
+    },
+    {
+        "id": 187,
+        "title": "Heather",
+        "formatted_title": "Heather",
+        "image": "/static/images/cover/187.jpeg",
+        "file_path": "static/music2/187.mp3"
+    },
+    {
+        "id": 188,
+        "title": "Careless Whisper",
+        "formatted_title": "Careless Whisper",
+        "image": "/static/images/cover/188.jpeg",
+        "file_path": "static/music2/188.mp3"
+    },
+    {
+        "id": 189,
+        "title": "Nothing Gonna Share My Love For You",
+        "formatted_title": "Nothing Gonna Share My Love For You",
+        "image": "/static/images/cover/189.jpeg",
+        "file_path": "static/music2/189.mp3"
+    },
+    {
+        "id": 190,
+        "title": "Stuck On You,",
+        "formatted_title": "Stuck On You,",
+        "image": "/static/images/cover/190.jpeg",
+        "file_path": "static/music2/190.mp3"
+    },
+    {
+        "id": 191,
+        "title": "If I Aint Got You",
+        "formatted_title": "If I Aint Got You",
+        "image": "/static/images/cover/191.jpeg",
+        "file_path": "static/music2/191.mp3"
+    },
+    {
+        "id": 192,
+        "title": "Minefields",
+        "formatted_title": "Minefields",
+        "image": "/static/images/cover/192.jpeg",
+        "file_path": "static/music2/192.mp3"
+    },
+    {
+        "id": 193,
+        "title": "Shallow",
+        "formatted_title": "Shallow",
+        "image": "/static/images/cover/193.jpeg",
+        "file_path": "static/music2/193.mp3"
+    },
+    {
+        "id": 194,
+        "title": "You Are The Reason",
+        "formatted_title": "You Are The Reason",
+        "image": "/static/images/cover/194.jpeg",
+        "file_path": "static/music2/194.mp3"
+    },
+    {
+        "id": 195,
+        "title": "Older",
+        "formatted_title": "Older",
+        "image": "/static/images/cover/195.jpeg",
+        "file_path": "static/music2/195.mp3"
+    },
+    {
+        "id": 196,
+        "title": "Grow As We Go",
+        "formatted_title": "Grow As We Go",
+        "image": "/static/images/cover/196.jpeg",
+        "file_path": "static/music2/196.mp3"
+    },
+    {
+        "id": 197,
+        "title": "Coastline",
+        "formatted_title": "Coastline",
+        "image": "/static/images/cover/197.jpeg",
+        "file_path": "static/music2/197.mp3"
+    },
+    {
+        "id": 198,
+        "title": "Home",
+        "formatted_title": "Home",
+        "image": "/static/images/cover/198.jpeg",
+        "file_path": "static/music2/198.mp3"
+    },
+    {
+        "id": 199,
+        "title": "Its Always Been You",
+        "formatted_title": "Its Always Been You",
+        "image": "/static/images/cover/199.jpeg",
+        "file_path": "static/music2/199.mp3"
+    },
+    {
+        "id": 200,
+        "title": "On Purpose",
+        "formatted_title": "On Purpose",
+        "image": "/static/images/cover/200.jpeg",
+        "file_path": "static/music2/200.mp3"
+    }
+]

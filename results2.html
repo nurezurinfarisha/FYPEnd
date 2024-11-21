@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main2.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fonts.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animation.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/musicplayer.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recommendation.css') }}" />
+    <title>EmoSync</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/emosyncLogo1new.png') }}" />
+</head>
+<body>
+    <!--Header-->
+    <custom-header></custom-header>
+    <!--Header-->
+
+    <div class="home_main2">
+        <div class="hm_gradient-1"></div>
+        <div class="hm_gradient-2"></div>
+        <div class="container hm_cont">
+            <div id="last_listen" class="last_listen">
+                <div class="container">
+                    <h1>MUSIC ANALYSIS RESULTS</h1>
+                    <h1>{{ song.formatted_title }}</h1>
+
+                    <!-- Rhythm Features -->
+                    <div class="ll_row">
+                        <!-- Rhythm Analysis -->
+                        <span>
+                            <div class="ll_card">
+                                <span class="txt">
+                                    <h2>Rhythm Analysis</h2>
+                                    <div class="scrollable-lyrics">
+                                        <div class="lyrics-content">
+                                            {% if rhythm_features is iterable %}
+                                                {% if rhythm_features is mapping %}
+                                                    <ul>
+                                                        {% for key, value in rhythm_features.items() %}
+                                                            <li><strong>{{ key }}:</strong> {{ value }}</li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% else %}
+                                                    <ul>
+                                                        {% for segment in rhythm_features %}
+                                                            <li><strong>Segment {{ loop.index }}</strong></li>
+                                                            <ul>
+                                                                {% for key, value in segment.items() %}
+                                                                    <li>{{ key }}: {{ value }}</li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif %}
+                                            {% else %}
+                                                <p>No rhythm features could be extracted from the song.</p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- Button to trigger the Rhythm Interpretation modal -->
+                                    <button id="show-rhythm-interpretation-btn" class="interpretation-btn">Show Rhythm Interpretation</button>
+                                </span>
+                                <span class="img">
+                                    <img src="{{ url_for('static', filename='images/2.png') }}" alt="">
+                                </span>
+                            </div>
+                        </span>
+
+                        <!-- Modal structure for Rhythm Interpretation -->
+                        <div id="rhythm-interpretation-modal" class="modal">
+                            <div class="modal-content">
+                                <h2>Rhythm Interpretation</h2>
+                                <div class="interpretation-text">
+                                    {% if rhythm_analysis %}
+                                        <ul>
+                                            {% for segment, interpretation in rhythm_analysis.items() %}
+                                                <li><strong>{{ segment }}</strong>: {{ interpretation['interpretation'] }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% else %}
+                                        <p>Interpretation insights could not be retrieved for rhythm analysis.</p>
+                                    {% endif %}
+                                </div>
+                                <button id="close-rhythm-modal" class="close-btn">Close</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Lyrics Analysis -->
+                        <span>
+                            <div class="ll_card">
+                                <span class="txt">
+                                    <h2>Lyrics Analysis</h2>
+                                    <div class="rhythm-details">
+                                        {% if lyrical_features %}
+                        
+                                            <div class="scrollable-lyrics">
+                                                <div class="lyrics-content">
+                                                    <p>{{ lyrical_features["Lyrics"] }}</p>
+                                                </div>
+                                            </div>
+                                        {% else %}
+                                            <p>No lyrics features could be extracted from the song.</p>
+                                        {% endif %}
+                                        <!-- Button to trigger the modal -->
+                                        <button id="show-interpretation-btn" class="interpretation-btn">Show Lyrics Interpretation</button>
+                                    </div>
+                                </span>
+                                <span class="img">
+                                    <img src="{{ url_for('static', filename='images/1.png') }}" alt="">
+                                </span>
+                                <span class="bg_filt"></span>
+                            </div>
+                        </span>                        
+                    </div>
+
+                    <!-- Modal structure for Lyrics Interpretation -->
+                        <div id="interpretation-modal" class="modal">
+                            <div class="modal-content">
+                                <h2>Lyrics Interpretation</h2>
+                                <div class="interpretation-text">
+                                    {% if predicted_lyrics_emotion %}
+                                            <h3>Predicted Emotion: <span class="emotion">{{ predicted_lyrics_emotion }}</span></h3>
+                                        {% else %}
+                                            <p>Emotion prediction was not successful.</p>
+                                        {% endif %}
+                                    {% if lyrical_features.get('interpretation') %}
+                                        <p>{{ lyrical_features.interpretation }}</p>
+                                    {% else %}
+                                        <p>Interpretation insights could not be retrieved for this song.</p>
+                                    {% endif %}
+                                </div>
+                                <button id="close-modal" class="close-btn">Close</button>
+                            </div>
+                        </div>
+
+                    <!-- Recommendation Section -->
+                    <div class="recommendation-section" id="recommendation-section">
+                        <h2 class="section-title">Recommended Songs</h2>
+                    
+                        <!-- Slider container -->
+                        <div class="recommendation-slider">
+                            <!-- Left button for sliding -->
+                            <button class="slider-button left" onclick="slideLeft()">&#10094;</button>
+                            
+                            <!-- Slider Content Wrapper -->
+                            <div class="recommendation-container" id="recommendation-container">
+                                {% for song in recommended_songs %}
+                                <div class="song-card">
+                                    <img src="{{ song.image }}" alt="{{ song.song_title }}" class="song-image">
+                                    <div class="song-info">
+                                        <h3 class="song-title">{{ song.song_title }}</h3>
+                                        <p class="similarity-score">Similarity: {{ song.similarity_score | round(2) }}</p>
+                                    </div>
+                                    <!-- Use data-* attributes to pass information to playSong function -->
+                                    <button class="play-button" 
+                                            data-file-path="{{ url_for('static', filename='music2/' ~ song.song_id ~ '.mp3') }}" 
+                                            data-song-title="{{ song.song_title }}" 
+                                            data-album-art="{{ song.image }}">
+                                        Play Song
+                                    </button>
+                                </div>
+                                {% endfor %}
+                            </div>
+                    
+                            <!-- Right button for sliding -->
+                            <button class="slider-button right" onclick="slideRight()">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="opacity" class="opacity"></div>
+
+   <!-- Persistent Music Player -->
+   <div id="music-player2" class="music-player2">
+        <img id="album-art" src="/static/images/default_album_art.png" alt="Album Art" class="album-art2">
+        
+        <div class="track-info2">
+            <span id="track-title">No song selected</span>
+        </div>
+        
+        <audio id="audio-player" class="custom-audio-player" controls style="display:none;">
+            <source id="audio-source" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div class="custom-audio-controls">
+
+            <div class="previous-btn" onclick="playPreviousTrack()">
+                <img src="/static/images/back-forward.png" alt="Previous" style="width: 30px;">
+            </div>
+            
+            <div class="play-pause-btn" onclick="togglePlayPause()">
+                <img id="play-icon" src="/static/images/play-button.png" alt="Play" style="width: 30px;">
+            </div>
+
+            <div class="next-btn" onclick="playNextTrack()">
+                <img src="/static/images/fast-foward.png" alt="Next" style="width: 30px;">
+            </div>
+            
+            <div class="progress-container">
+                <span id="current-time" class="time-display">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
+                <span id="total-duration" class="time-display">0:00</span>
+            </div>
+
+            <div class="volume-control">
+                <img src="/static/images/high-volume.png" alt="Volume" style="width: 30px;">
+                <input type="range" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        const homeUrl = "{{ url_for('home') }}";
+    </script>
+    <script src="/path/to/header.js"></script>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/play.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/header.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/recommendationSlider.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/musicplayer.js') }}"></script>
+</body>
+</html>

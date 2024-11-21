@@ -1,0 +1,124 @@
+/* Music Player Styling */
+.music-player2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Center contents */
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+}
+
+.album-art2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+
+
+
+
+/* Previous Button Styling */
+.previous-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* Next Button Styling */
+.next-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.track-info2 {
+    font-family: 'Outfit', sans-serif; /* Apply DM Sans font */
+    font-size: 18px;
+    font-weight: 700; /* Use a medium weight for a balanced look */
+    letter-spacing: 0.3px; /* Subtle letter spacing for readability */
+    color: #f5f5f5; /* Soft white color for contrast */
+    margin-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px; /* Center control area width */
+    justify-content: center;
+}
+
+/* Play/Pause Button */
+.play-pause-btn {
+    width: 40px;
+    height: 40px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* Time Display */
+.time-display {
+    font-size: 14px;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* Progress Bar */
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.progress-bar {
+    position: relative;
+    width: 300px;
+    height: 8px;
+    background: #444;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #1DB954;
+    width: 0%;
+}
+
+/* Volume Control */
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-control input[type="range"] {
+    width: 100px;
+    height: 6px;
+}
